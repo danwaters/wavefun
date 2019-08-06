@@ -1,0 +1,41 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="WaveGeneratorWP7.Oscillator"
+	d:DesignWidth="480" d:DesignHeight="800">
+<Grid x:Name="LayoutRoot">
+	<StackPanel Name="OscPanel" VerticalAlignment="Top">
+    			<StackPanel Orientation="Horizontal">                    
+					<RadioButton x:Name="rbNone" GroupName="WaveTypeGroup" IsChecked="True" Click="rbNone_Click">
+						<Image Source="toolbar_none.png"/>				
+					</RadioButton>
+					<RadioButton x:Name="rbSine" GroupName="WaveTypeGroup" Click="rbSine_Click">
+						<Image Source="toolbar_sine.png"/>				
+					</RadioButton>
+					<RadioButton x:Name="rbSquare" GroupName="WaveTypeGroup" Click="rbSquare_Click">
+						<Image Source="toolbar_square.png"/>				
+					</RadioButton>
+					<RadioButton x:Name="rbSaw" GroupName="WaveTypeGroup" Click="rbSaw_Click">
+						<Image Source="toolbar_saw.png"/>				
+					</RadioButton>
+					<RadioButton x:Name="rbNoise" GroupName="WaveTypeGroup" Click="rbNoise_Click">
+						<Image Source="toolbar_noise.png"/>				
+					</RadioButton>
+					<TextBlock x:Name="lblWaveType" Text="None" TextWrapping="Wrap" VerticalAlignment="Center"/>										
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+					<TextBlock HorizontalAlignment="Left" Margin="0" Text="Frequency" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+					<Slider x:Name="sldFrequency" Minimum="100" Maximum="2000" SmallChange="1" ValueChanged="sldFrequency_ValueChanged" LargeChange="100" Width="250" VerticalAlignment="Center"/>
+					<TextBlock x:Name="lblFreq" Text="100Hz" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<TextBlock HorizontalAlignment="Left" Margin="0" Text="Volume" TextWrapping="Wrap" Width="120" VerticalAlignment="Center"/>
+					<Slider x:Name="sldVolume" Width="250" Minimum="0" Maximum="32760" SmallChange="1" ValueChanged="sldVolume_ValueChanged" LargeChange="100" Value="32760"/>
+					<TextBlock x:Name="lblVolume1" Text="100%" TextWrapping="Wrap" VerticalAlignment="Center"/>
+				</StackPanel>
+			</StackPanel>
+	</Grid>
+</UserControl>

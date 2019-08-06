@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveGeneratorWP7", "WaveGeneratorWP7\WaveGeneratorWP7.csproj", "{a24a851a-6a3b-4272-ab3c-25fd94689c78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A24A851A-6A3B-4272-AB3C-25FD94689C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24A851A-6A3B-4272-AB3C-25FD94689C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24A851A-6A3B-4272-AB3C-25FD94689C78}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A24A851A-6A3B-4272-AB3C-25FD94689C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24A851A-6A3B-4272-AB3C-25FD94689C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24A851A-6A3B-4272-AB3C-25FD94689C78}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
